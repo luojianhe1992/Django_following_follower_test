@@ -41,9 +41,9 @@ urlpatterns = [
 
     url(r'show_users/$', 'WebApp.views.show_users', name='show_users'),
 
-    url(r'follow/(?P<user_id>\d+)$', 'WebApp.views.follow', name='follow'),
+    url(r'add_followship/(?P<user_id>\d+)$', 'WebApp.views.follow', name='follow'),
 
-    url(r'un_follow/(?P<user_id>\d+)$', 'WebApp.views.del_follow', name='del_follow'),
+    url(r'delete_followship/(?P<user_id>\d+)$', 'WebApp.views.unfollow', name='unfollow'),
 
     url(r'show_followships/$', 'WebApp.views.show_followships', name='show_followships'),
 

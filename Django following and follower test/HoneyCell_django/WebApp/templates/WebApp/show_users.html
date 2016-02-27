@@ -79,7 +79,7 @@
                             <button>Delete</button>
                         </a></td>
                         {% if each_user_followship.is_followed %}
-                            <td><a href="{% url 'del_follow' each_user_followship.user.id %}">
+                            <td><a href="{% url 'unfollow' each_user_followship.user.id %}">
                                 <button>Unfollow</button>
                             </a></td>
                         {% else %}

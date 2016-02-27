@@ -189,7 +189,7 @@ def follow(request, user_id):
 
 
 @login_required
-def del_follow(request, user_id):
+def unfollow(request, user_id):
     print("in the unfollow function.")
 
     print(request)
@@ -207,8 +207,6 @@ def del_follow(request, user_id):
 
     return HttpResponseRedirect(reverse("show_users"))
 
-
-    return HttpResponseRedirect(reverse("show_users"))
 
 
 @login_required
